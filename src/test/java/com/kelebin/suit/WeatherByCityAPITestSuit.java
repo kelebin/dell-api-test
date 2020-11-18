@@ -13,5 +13,5 @@ import org.junit.runners.Suite;
         WeatherByCityAPITestNotFound.class,
         WeatherByCityAPITestBadRequest.class
 })
-public class SuitClass {
+public class WeatherByCityAPITestSuit {
 }

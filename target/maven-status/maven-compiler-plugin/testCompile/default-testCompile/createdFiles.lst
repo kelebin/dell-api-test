@@ -1,0 +1,4 @@
+com\kelebin\test\WeatherByCityAPITestNotFound.class
+com\kelebin\suit\WeatherByCityAPITestSuit.class
+com\kelebin\test\WeatherByCityAPITestBadRequest.class
+com\kelebin\test\WeatherByCityAPITestSuccess.class
