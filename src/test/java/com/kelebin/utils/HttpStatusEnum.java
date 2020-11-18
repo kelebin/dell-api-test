@@ -1,6 +1,6 @@
 package com.kelebin.utils;
 
-public enum httpStatusEnum {
+public enum HttpStatusEnum {
 
     OK(200, "OK"),
     Created(201, "Created"),
@@ -14,7 +14,7 @@ public enum httpStatusEnum {
 
     private String descricao;
 
-    httpStatusEnum(Integer code, String desc) {
+    HttpStatusEnum(Integer code, String desc) {
 
         this.code = code;
         this.descricao = desc;
