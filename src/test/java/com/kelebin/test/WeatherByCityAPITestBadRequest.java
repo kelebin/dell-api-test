@@ -13,10 +13,10 @@ import org.junit.Test;
 import static com.kelebin.utils.UrlUtil.urlAPI;
 import static junit.framework.Assert.assertTrue;
 
-public class WeatherByCityAPITest {
+public class WeatherByCityAPITestBadRequest {
 
-    public String city =  "Round Rock";
-    public String state = "TX";
+    public String city =  "--";
+    public String state = "--";
 
 
     public RequestGenerator request = new RequestGenerator();
@@ -24,9 +24,8 @@ public class WeatherByCityAPITest {
     @Test
     public void test1(){
 
-        Response response = request.genericRequestGET(UrlUtil.license,city,state, urlAPI,HttpStatusEnum.OK.getCode());
+        Response response = request.genericRequestGET(UrlUtil.license,city,state, urlAPI,HttpStatusEnum.BadRequest.getCode());
 
-        assertTrue(Validation.validateBodyResponse(response,city,state));
     }
 
 }

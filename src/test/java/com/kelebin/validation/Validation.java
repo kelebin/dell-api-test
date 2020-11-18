@@ -10,8 +10,7 @@ public class Validation {
 
         Map<String, String> jsonResponse = response.jsonPath().getMap("$");
 
-        boolean resultado =    jsonResponse.get("Code").equals("Success")
-                            && jsonResponse.get("city").equals(city)
+        boolean resultado =    jsonResponse.get("city").equals(city)
                             && jsonResponse.get("State").equals(state);
         return resultado;
     }
